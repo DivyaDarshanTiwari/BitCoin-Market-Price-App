@@ -1,57 +1,97 @@
-/* Global styles */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
+body{
+    background-color: rgba(0, 0, 0, 0.648);
+    color: white;
+    text-align: center;
+}
+section {
+    display: table;
   }
   
-  /* Component styles */
-  
-  .bit-coin-page {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
   }
   
-  .bit-coin-page ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
   }
   
-  .bit-coin-page li {
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+  }
+
+  .introduction{
+    text-align: center;
+
+  }
+  .introduction h1{
+    font-size: 100px;
+    margin: 0px;
+    color: #000000c5;
+  }
+  
+  .introduction p{
+    font-size: 30px;
+  }
+
+  .simplebutton{
+    background-color: #7a32e0;
+    border-radius: 3px;
+    margin-left: 80px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .simplebutton:hover{
+    background-color: #120327;
+  }
+  .main{
+    margin: 0 auto;
+    width: 10%; 
+  }
+
+  .main section ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .main section ul li{
+    list-style-type: none;
+    text-align: center;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    margin: 10px;
+    border: 2px solid black;
+    transition: transform .5s ease-in-out;
+
+  }
+
+  .main section ul li:hover{
+    z-index: 1;
+    transform: scale(1.5);
+    background-color: #7a32e0;
+  }
+
+  .main section p{
+    text-align: center;
   }
   
-  .bit-coin-page li:last-child {
-    border-bottom: none;
-  }
-  
-  .bit-coin-page li span {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .bit-coin-page button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .bit-coin-page button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .bit-coin-page button img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
-  }

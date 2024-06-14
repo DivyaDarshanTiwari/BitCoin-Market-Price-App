@@ -1,10 +1,42 @@
-<p>bit-coin-page works!</p>
-<ul>
-    <li *ngFor="let items of data?.bpi | keyvalue">
-        {{items.key}}: {{items.value.rate}}
-    </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Page</title>
+</head>
+<body>
+    
+    <section class="main">
+        <section class="introduction">    
+            <h1>Hello</h1>
+            <p>and</p>
+            <p>Welcome to the BitCoin Price Shower page</p>
+        </section>
 
-<p>{{data?.time?.updatedISO }}</p>
-
-<button (click)="this.ngOnInit()"><img src="https://w7.pngwing.com/pngs/323/519/png-transparent-brand-black-font-page-reload-icon-miscellaneous-white-text-thumbnail.png" /></button>
+        <section>
+              <ul>
+                <li *ngFor="let items of data?.bpi | keyvalue">
+                  <span>{{items.key}}</span>:  <span>{{items.value.rate}}</span>
+                </li>
+              </ul>
+          
+              <p>{{data?.time?.updatedISO }}</p>
+          
+        </section>
+    
+        <section>
+          <div class="example-button-row">
+            <div class="example-flex-container">
+              <div class="example-button-container simplebutton">
+                <button  mat-fab extended (click)="this.getData()">
+                  <mat-icon>autorenew</mat-icon>
+                  Reload
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+    </section>
+</body>
+</html>

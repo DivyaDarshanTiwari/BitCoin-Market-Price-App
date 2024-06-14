@@ -5,6 +5,9 @@ import { BitCoinPageComponent } from './bit-coin-page/bit-coin-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,8 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    MatButtonModule,MatDividerModule,MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

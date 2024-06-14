@@ -35,15 +35,15 @@ export class BitCoinPageComponent implements  OnInit{
   }
 
   ngOnInit(){
-    this.getData().subscribe((data)=>{
-      this.data = data as BitcoinData;
-      console.log("User data",data);
-    })
+    this.getData()
   }
 
   getData(){
 
     console.log("Hello");
-    return this.http.get(this.url);
+    this.http.get(this.url).subscribe((data)=>{
+      this.data = data as BitcoinData;
+      console.log("User data",data);
+    });
   }
 }
