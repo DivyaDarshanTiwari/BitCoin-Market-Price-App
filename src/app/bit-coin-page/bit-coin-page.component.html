@@ -17,11 +17,20 @@
         <section>
               <ul>
                 <li *ngFor="let items of data?.bpi | keyvalue">
-                  <span>{{items.key}}</span>:  <span>{{items.value.rate}}</span>
+                    <h3>Discription</h3>
+                    <p>{{items.value.description}}</p>
+                  <p>Code:{{items.key}} </p>
+                  <span>Current_Rate:{{items.value.rate}}</span>
                 </li>
-              </ul>
-          
-              <p>{{data?.time?.updatedISO }}</p>
+            </ul>
+            
+            <div class="time">    
+                <h3>Time</h3>         
+                 <p>{{data?.time?.updatedISO }}</p>
+                 <p>{{data?.time?.updated}}</p>
+                 <p>{{data?.time?.updateduk}}</p>
+            </div>
+
           
         </section>
     

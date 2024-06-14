@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgba(0, 0, 0, 0.648);
+    background: linear-gradient(#e66465, #9198e5);
     color: white;
     text-align: center;
 }
@@ -38,12 +38,13 @@ section {
 
   .introduction{
     text-align: center;
+    margin-left: 30px;
 
   }
   .introduction h1{
     font-size: 100px;
-    margin: 0px;
     color: #000000c5;
+    margin: 0px;
   }
   
   .introduction p{
@@ -53,7 +54,7 @@ section {
   .simplebutton{
     background-color: #7a32e0;
     border-radius: 3px;
-    margin-left: 80px ;
+    margin-left: 200px ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -65,7 +66,7 @@ section {
     width: 10%; 
   }
 
-  .main section ul {
+  .main section ul ,.time{
     list-style-type: none;
     text-align: center;
     padding: 0px;
@@ -75,13 +76,14 @@ section {
 
   }
 
-  .main section ul li{
+  .main section ul li, .time{
     list-style-type: none;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    border: 2px solid black;
+    background-color: rgb(101, 67, 23);
     transition: transform .5s ease-in-out;
+    border-radius: 10px;
 
   }
 

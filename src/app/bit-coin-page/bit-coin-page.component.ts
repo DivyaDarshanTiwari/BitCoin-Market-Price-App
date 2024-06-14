@@ -31,7 +31,9 @@ export class BitCoinPageComponent implements  OnInit{
   data :BitcoinData | undefined;
   private url= 'https://api.coindesk.com/v1/bpi/currentprice.json'
 
+  symbol: string;
   constructor(private http:HttpClient){
+    this.symbol =""
   }
 
   ngOnInit(){
