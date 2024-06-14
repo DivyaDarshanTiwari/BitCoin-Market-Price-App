@@ -1,1 +1,12 @@
 <p>bit-coin-page works!</p>
+<ul>
+    <li *ngFor="let items of data?.bpi | keyvalue">
+        {{items.key}}: {{items.value.rate}}
+    </li>
+</ul>
+
+<p>{{data?.time?.updatedISO }}</p>
+
+<button>
+    
+</button>

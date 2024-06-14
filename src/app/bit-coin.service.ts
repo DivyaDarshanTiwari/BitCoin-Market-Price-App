@@ -5,5 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class BitCoinService {
 
+  url='https://api.coindesk.com/v1/bpi/currentprice.json'
+
   constructor() { }
+
+  getData(){
+
+  }
 }
