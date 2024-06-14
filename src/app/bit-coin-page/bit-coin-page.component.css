@@ -1,0 +1,57 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  
+  /* Component styles */
+  
+  .bit-coin-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bit-coin-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bit-coin-page li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .bit-coin-page li:last-child {
+    border-bottom: none;
+  }
+  
+  .bit-coin-page li span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .bit-coin-page button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bit-coin-page button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .bit-coin-page button img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
