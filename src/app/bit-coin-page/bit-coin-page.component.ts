@@ -42,6 +42,8 @@ export class BitCoinPageComponent implements  OnInit{
   }
 
   getData(){
-    return this.http.get(this.url)
+
+    console.log("Hello");
+    return this.http.get(this.url);
   }
 }
